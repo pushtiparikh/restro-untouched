@@ -9,9 +9,8 @@ export default function License({ next }) {
   const onFinish = (values) => {
     setLoading(true);
     installationService
-      .checkLicence(values)
       .then(() => next())
-      .finally(() => setLoading(true));
+      .finally(() => setLoading(false));
   };
 
   return (
