@@ -25,14 +25,14 @@ export default function License({ next }) {
             <Form.Item
               label='Purchase ID'
               name='purchase_id'
-              rules={[{ required: true, message: 'Missing purchase id' }]}
+              rules={[{ required: false, message: 'Missing purchase id' }]}
             >
               <Input />
             </Form.Item>
             <Form.Item
               label='Purchase code'
               name='purchase_code'
-              rules={[{ required: true, message: 'Missing purchase code' }]}
+              rules={[{ required: false, message: 'Missing purchase code' }]}
             >
               <Input />
             </Form.Item>
