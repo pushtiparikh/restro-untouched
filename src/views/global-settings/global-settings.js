@@ -24,9 +24,6 @@ export default function GlobalSettings() {
           ))}
         </Steps>
       </Card>
-      <Row hidden={steps[current].content !== 'First-content'}>
-        <License next={next} />
-      </Row>
       <Row hidden={steps[current].content !== 'Second-content'}>
         <ProjectInfo next={next} />
       </Row>
