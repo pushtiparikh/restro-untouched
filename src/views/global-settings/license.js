@@ -3,7 +3,7 @@ import { Button, Card, Col, Form, Input, Row } from 'antd';
 import installationService from '../../services/installation';
 
 export default function License({ next }) {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [form] = Form.useForm();
 
   const onFinish = (values) => {
@@ -11,7 +11,7 @@ export default function License({ next }) {
     installationService
       .checkLicence(values)
       .then(() => next())
-      .finally(() => setLoading(false));
+      .finally(() => setLoading(true));
   };
 
   return (
